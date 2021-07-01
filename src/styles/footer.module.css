@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: var(--color-gray);
+  color: black;
+}
+
+.container a {
+  color: black;
+}

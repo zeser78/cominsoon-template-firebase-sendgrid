@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Engagement Wish coming soon`,
+    description: `Custom natural diamond engagement rings like never seen before.`,
+    author: `Sergio Olivares`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,7 +25,32 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/ew-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Crimson Text`,
+          `source sans pro\:400,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyAq4XqOHkF05aTYj4_H9HJsvItfGaIoMPk",
+          authDomain: "engagementwish.firebaseapp.com",
+          databaseURL: "https://engagementwish.firebaseio.com",
+          projectId: "engagementwish",
+          storageBucket: "engagementwish.appspot.com",
+          messagingSenderId: "847005360897",
+          appId: "1:847005360897:web:094c276c8fc0c29714b100",
+          measurementId: "G-8X4B2VNR3B",
+        },
       },
     },
     `gatsby-plugin-gatsby-cloud`,
